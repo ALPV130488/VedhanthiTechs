@@ -1,0 +1,877 @@
+communication----->language
+comm------->progmg lang.....instruct
+ on and off(0 1)
+									software
+						standalone (unshared)applic'n  			distributed(shared) app'n
+						
+				system os,drivers;;;;								web softwares(www)
+     (1)pop(procedure oreinted)									(2)oop(object oriented)
+	 B,BCPL,COBAL ,PHOTON,FORTRAN ETC				<			JAVA,.NET,LISP, ETC........
+	 
+	 
+	 
+	 
+	 
+	***** PERFORMANCE -----inheritance ,polymorphism
+	AND 
+	*****SECURITY-----Abstraction,encapsulation
+	OOPS---->Features =====>OOPL(JAVA)
+	
+	
+	
+	
+	java>other lang
+	(1)platform indipendency :-windows os---ubuntu---->>>>>>window------linux,,,,etc..........portable=arc neutral(processor)+palat indipendency(os)
+	(2)garbage collection:-32 files------garbage collector-----best performance
+	
+	WORA-----WRITE ONCE RUN ANYWHERE......
+												history of java
+					green team----green talk(.gt)(1991)------>oak------->java(.java)(1995)-----jdk 1.0(sun micro systems)--------jdk 18(oracle)
+					james Gosling ------father
+					star seven(java)
+					
+					
+					
+					***	jse (java standard edition)		 jee (java enterprise edt.)			jme(java medium edt.)***
+			
+DESKTOP APP:-media player;anti virus;notepad---------->jse----------------------->core java;applets.......
+
+
+MOBILE APP:-Calculator;whatsapp----------------------->jme
+
+
+WEB APP:-youtube;gmail;fb;instagram------------------->jee------------------------>servlets;jsp...----------->server----------->url---------->client(protocol)
+
+
+DISTRIBUTED:-phone pe;pay tm;banking------------------>jee.
+
+
+
+
+assembly lang(low level lang)------------------>assembler---------------->machine lang(0,1)----
+high level lang----------->	complier(01111) / interpreter(output)----->machine lang(0,1)
+
+compiler:-
+ source code---->compiled (compiler)-----machine code(0,1)------>processor/os---->o/p--------fast 
+ 
+
+
+interpreter:-
+ source code ------->interpreted(interpreter)----->o/p----- bit slow
+ 
+ english (26)--------->java(keywords  53)(lower case)
+ 
+ 
+ 
+ 
+ requirements:- (1)os (2) java software (3)IDE(work space)
+ 
+ 
+ IDENTIFIERS:-NAME
+ ===========
+ (1)
+ a-z
+ A-z
+ 0-9
+ space;$;_
+ 
+  total_number(v
+    total# (in    
+    123total (in    
+     total123  (v  
+     ca$h  ( v    
+     _$_$_$_$_$_(v
+   all@hands   (in
+   java2share (v
+   Integer (class) (v
+   Int      (v
+   int      (in
+   
+   
+   
+									datatypes
+				primitive dt(buit-in)						non primitive dt(user defined)
+	number       alphabets        boolean							class;string;array.......
+ byte				char			(true/
+short								false )
+int 
+long
+float
+double 
+
+								variables
+to create var:-(1)     dt var name;//declaration
+				varname = value;//initiallization
+				
+				(2) dt varname = value;//declaration;initiallization				
+		
+			local variable							global variable(static; instance)
+			
+(1)static      (2)instance
+
+syntax:-(1) static var/prop's
+		(2) dt varname = value;
+
+memory:-(1)it will get memory only once at the time of cls loading into jvm
+		(2) it get's memory for every obj creation.
+
+
+acces:-(1)to acces it by using class name
+	    (2)by using obj reference						creation of an obj:----
+															syntax:-  clsname objname = new clsname();
+
+
+in jvm:-(1)Method area
+		(2)Heap area
+		
+where to use:-(1)common data/prop's.:-nationality---->Indian
+			   (2)unique data/prop's.:-aadher--------->id number
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+cls    monitor(screen size;colour)
+		dell
+		lenovo
+		acer
+		
+
+operators:- ULTRA AB
+===========	
+
+Wrapper clses:-cls for every Primitive dt.
+=============
+
+to convert primitive dt into an obj:- Auto Boxing
+
+to convert an obj into primitive dt:-Un Boxing
+
+
+Naming Conventions:-*******keywords----->lowercase
+==================
+pacakges:-(1)lowercase alphabets:-lang;util;
+			(2)abbrevations:-util
+			(3)acronyms:-awt(abstract window toolkit)
+
+classes:-(1)1st letter must be in upper case ,remaning r in lower case
+		(2)it should be a noun :- String,System,(A,C)
+
+
+var/met's:-(1)Camel case :-1st lowercase, after that we can use uppercase:-getAdd();
+
+
+
+
+
+methods:-
+=======
+					static 												instance/genral
+					
+(syntax) meth signature:- access modifier returntype methodname(params......){
+										//code
+										//method body /met implementation
+																}
+																
+																
+for static met's:-access modifier  static returntype methodname(){
+										//code
+										//method body /met implementation
+																}
+																
+Pacakages:-------->classes=var's + met's(data members +member functions)
+==========
+					(1)built-in					(2)user defined pack's
+					
+					lang-Sysetm-
+					util
+					sql
+					io
+					
+		syntax:-java.lang.System;------------->to access any one of the cls.
+				java.util.Scanner;
+				
+				java.lang.*;--------------------->to access all the clses.
+				
+String:-
+======
+		String(immutable) 				String Buffer(synchronized;mutable); String Builder(not synchronized mutable)
+		
+		String name = "lakshmi";//string literal
+		
+		String name1 = new String("LAKSHMI");
+		
+		
+		
+*******default cls for every java file:-   "Object class"
+*******default package for every java file:-"lang".
+
+
+t1,t2,t3-unit process (addition,subraction,mul'n)
+
+public void m1()-------------------------------------------->no thread saftey   (String Builder)
+{
+//code--------->it will execute multiple threads============>multi threading
+}
+public syncronized void m1()-------------------------------->thread saftey     (String Buffer)
+{
+//code--------->after t1,t2 will be performed ==============>no multithreading
+}
+		
+		
+		sync-----
+				
+	oops:-
+	=====
+INHERITANCE:-getting features from one class to another class.
+
+		extends	(cls->cls,intf'e->intf'e)				implements(class->intf'e;intf->intf)
+		
+		"CODE REUSEABLITY"
+class A									=====>parent cls/Base cls
+{
+//100 met's
+}
+class B extends A						======>child cls/Sub cls
+{
+//20 met's--------------------->120 met's
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+MI:-
+===
+(1)MI is not supported by java @ cls level
+(2)
+
+
+
+
+class Parent1											class Parent2
+public void m1(int a , int b)							public void m1(int a,int b)
+{														{
+return a+b;												return a*b;
+}														}
+
+class Child extends Parent1 , Parent2{
+
+Child obj = new Child();
+
+syso(obj.m1(2,3));//
+
+syso(obj.m1(3,4));//
+
+
+}
+
+----->Based on met's body .met's divided into 2 types:-
+
+(1)Abstract	(no implementation)		(2)Concrete(implementation)
+
+(1)public void m1()					public void m1()
+{									{//code
+}									}
+(2)public void m1();**********abstract met's must end with a semicolon.
+
+
+classes => the combination of concrete met's only.
+
+Abstract classes =>the combination of concrete met's+ Abstract met's.
+
+Interfaces => the combination of Abstract met's only.
+
+
+interface Parent1								interface Parent2
+{												{
+public void m1();								public void m1();
+}												}
+class Child implements Parent1, Parent2{
+
+obj.m1();
+
+}											
+
+
+POLYMORPHISM:-same action in diff ways(Many forms)
+============
+(1)Method Overloading			(2)Method Overriding
+
+m.overloading:-Met's with same name but signature is diff.
+-------------
+																							access modifier returntype metname(params....){
+(1)No:-of parameters.
+(2)Order of params.
+(3)Type of params.																						//implementation
+																							}
+m.Overriding:-Met's with same name but implementation is diff.
+------------
+Parent
+{
+
+property()
+{
+1000 cr;
+}
+marriage()
+{
+
+kajol;
+}
+
+
+}
+class Child extends Parent
+{
+
+marriage()
+{
+aishwarya rai;
+
+}
+}
+
+}
+Encapsulation:-Wrapping up of data & correspoding met's(unit of var and met's)
+=============
+
+
+
+Access mod's:-
+(1)We must use the "public" keyword for one class only, in a single java file.(Provided that must be a sub class)
+
+
+
+
+
+Exception Handling:-It's a mechanism to provide user friendly error msg's.
+==================
+
+BY EH:-(a)Normal termination			(b)user frindly error msg's.
+
+(1)Systemt defined error:-Can't understand by humans.
+
+(2)user friendly error:-This is readable by the user.
+
+
+
+Contructors:-To initialize the objects.
+===========
+						Classname objname = new Classname();
+			syntx:-Accessmodifier classname()---------------->non-parametrized const....
+			{
+			//code
+			}
+			
+			accessmodifier classname(Parameters.....)------------->parametrized const.....
+			{
+			//code
+			}
+
+
+
+class A{					class A
+				jvm
+main()----------------->	default A(){}
+							main(){}
+
+}
+
+
+this :-To represent current class prop's(var's;met's;constr's)
+
+
+
+super:-To represent parent class prop's(var's;met's;constr's)
+
+
+final:-used before(var's;met's;class)
+
+if it is before:-
+
+class:-we can't inherit that classes.
+
+met's:-we can't override that met.
+
+var's:-for blank final var:-we need to intialize the value in constr only.
+
+		we can't update final var locally and globally.
+
+
+
+Array:-Group of var's with dt.(referred by a common name)
+=====
+
+String name = "lakshmi";
+
+String name ="padmavathi";
+
+var:--		dt varname = value;
+
+array:-		dt[] arrayname = new dt[size(5)];--------->(1)
+
+			index no:-0,1,2,3,4.
+			
+			arrayname[0]= 23;
+			
+			dt[] arrayname={12,34,566,778,23,34}------>(2)
+			
+			dt[] arrayname = new dt[]{12,34,56,67,7,8}-->(3)
+			
+			
+Limitations:-
+
+(1)Fixed in index number(we can't increase/ decrease the length of an array)
+
+(2)similar obj's(i.e, with similar datatype)
+
+(3)There are no built-in met's in an array.
+
+
+Collections:-(collection's framework)
+===========
+
+framework :- readymade met's.
+
+********collection's is in util pacakage.
+
+
+(1)Collections are not fixed in size.
+
+(2)Here we will have both similar / dismilar obj's.
+
+(3)Lots of utility met's.
+
+
+array={1,2,43,4,5,5,56}
+
+collections = [12,df,name,343.4]
+
+
+interface = collection of only abstract met's.(abstract met's=>which don't have any implementation)
+
+collection interface(abstract cls)--------->*****we can't create obj in coll'n interface.******
+		^
+		|(implements)
+
+Collections class =>concreate met's+(inherited met's)------->we can create an obj in collections class
+
+		ArrayList							LinkedList						Vector							
+
+size	10	((cc*(3/2))+1)						10							10(2*cc)	
+		10,16.......														10,20,40....		
+
+woe		Not synchronised					Not synchronised				synchronized
+
+(1)not recomended to delete/add 		(1)useful to add/delete
+
+(2)useful for Selection					(2)no recomended to select
+											java 
+		
+File handling:-(1)create file   (2)write into a file		(3)Read from the file.
+=============
+
+default pacakage for every java file:-lang 
+
+default class for every java file:-Object
+
+collection's are in which package :-util
+
+file handling are in which package:-io
+
+(1)File 				(Creates a new file)
+
+(2)FileWriter
+   BufferWriter		(Write into a file)
+   PrintWriter
+
+(3)FileReader			(Read from the file)
+   BufferReader
+
+
+IO pacakage:-INPUT OUTPUT PACKAGES.
+
+
+https://docs.oracle.com/en/java/javase/13/docs/api/allpackages-index.html    :for pacakges info
+
+
+
+hi 
+every
+one
+
+
+
+end line
+
+-1:-null 
+
+
+serialization:-(interface)------------->implements(to child)==================>serde
+==============
+(1)objectcode --------->bytecode(serialization)\
+(2)bytecode   --------->Objectcode (Deserialization)
+
+
+
+
+
+
+
+								--------------------(FILE (.txt))-------------->
+
+				(BYTE CODE)		-------------------(DATA BASE)----------------->	(BYTE CODE)
+					^																	|
+					|			--------------------(MAIN MEM)----------------->		|
+	(SERIALISATION)	|																	|	(DESERIALISATION)
+					|																	|
+					|																	!
+			   (OBJECT CODE)														(OBJECTCODE)
+			   
+				infosys hyd(jvm1)(client)													infosys ban(jvm2)
+		EMP(ID;NAME;SAL;ADD)
+ 
+
+
+FileInputStream					(read from the file)
+
+ObjectInputStream				readobject(obj name);
+
+
+FileOutputStream				(write into the file)
+
+ObjectOutputStream				writeobject(obj name);
+
+https://www.codejava.net/java-se/java-se-versions-history
+
+
+Interfaces:-any no:- of abstract mets(public )//by default the interface met's are public abstract met's.
+
+(interface is for 100% abstraction)--->security .
+
+marker interface:-no abstract met's ex:-Serializable interface
+
+Functional interfaces:-SAM(single abstract met.)  ex:-
+
+
+@FunctionalInterface--->optional annotation.
+
+Funt interface = single abstract met + any no:- of static met's + any no:-of default met's.
+
+static & default:-without having any effect to the child ,if we want to add any functionality to the parent.
+
+
+static:-static met's can't be overrided(can't change the implementation)
+
+
+default :- default met's can be overrided (can change the implementation)
+
+        provided that:-in override block we should not use the "default " keyword in the met signature
+
+Date and Time API:-
+------------------
+
+java 7 :- java.util.Date;---------->mutable
+			(Date;Calender ;TimeZone;TimeStamp;.......=>perforamance issues.)
+
+
+java 8 :-java.time;----------------->Immutable(static met's).------------>takes sys date only but not time.
+
+			period:-The difference between two dates.
+			
+age calculator:-	birth time -----today date========>diff b/n the dates
+
+
+::--->alternate way for lambda exp.
+
+def:- Providing existing logic of method to FunctionalInterface Abstract method.
+
+
+streams:-  java.io.Streams;--->operations realated to file handling						
+-------	   java.util.Streams;
+
+def:-To perform some operations on objects we have streams.(collections is source of a stream.)
+
+
+to process the data in obj's we have 2 mechanisms :-(1)filter   (2)map
+
+filter:-Based on condition ,it will filter the data and put the filtered data in new collection.
+
+
+
+
+map:- Operation is done on every element,it will put the result on another collection.
+
+
+												DATABASE:-
+												
+	ram		2334343		man234				
+	ramya	3487389		cat123
+
+
+To store the data for future access/for present ,permenantly, securely, and in an organized manner  we are recommended to use 
+database.
+
+ex:-Oracle,Mysql,db2,postgres,Mongodb...............etx................
+
+query:-To do any operation we are going to write the command. That command here is called "QUERY".
+
+
+
+Rdbms:-The data is organized in the form of tables.
+
+Rows (Records)+columns(fields).
+
+all the querys got divided into 5 categories:-
+
+DDL:-Data Defnition Language----------------->create ,alter,drop,rename,truncate.
+DML:-		Manipulation Lang---------------->insert,update,delete
+DRL:-		Retrival Lang-------------------->select.
+DCL:-		Control Lang--------------------->grant,revoke.
+TCL:-Transcation control Lang---------------->commit,rollback.
+
+
+
+stack:-To develop web applications,the tech's we used are front end framework,backend framework,server side tech's;db 
+			all together are called as stack.
+
+(1)MEAN stack
+-------------
+M->MongoDB
+E->Express
+A->Angular js
+N->Node js
+
+(2)MERN stack.
+--------------
+M->Mongo DB
+E->Express
+R->React js
+N->Node js.
+
+React , Angular is :-Front end framework
+Express JS is :-Backend side framework
+Node JS is :-Server side run time environment
+Mongo DB:-DATABASE
+
+
+In MOngo db the data is stored in documents,so that we can have high scalability,high performance.
+
+group of thes mongo db doc'c is called collection.
+
+RDBMS :-TABLES------>ROW/COLOUMNS-------->SQL DB
+
+MONGO DB:-COLLECTION-------->DOCUMENTS------>NoSql DB
+
+MONGO DB :-(1)Data is stored in the form of JSON sytle---->Mongo drivers ------------>BSON document
+
+
+		JSON------->(Human understandable,machine undersatandable):-JavaScript OBJECT Notation
+		BSON------->(Machine understandable(binary fromat.)):-Binary JSON.
+
+
+
+
+
+
+MONGODB SERVER:-It is to store the info.
+
+MONGO DB SHELL:-It is to mangae the server.
+
+---->By using the shell we can do all the crud operations.
+
+C:-Create
+R:-Retrive
+U:-Update
+D:-Delete.
+
+
+Insert;Find;Update;Delete;Create
+
+
+emp(eid;ename;)
+
+
+
+
+
+
+Student: {
+    "name": "LAKSHMI",
+    "ID": 130488,
+    {
+        "add": "hyderabad",
+        
+    }
+}
+
+
+entity:-A thing in the real world with an independent existence.ex:-car
+Attributes:-prop's that describes ettity.ex:-colour;brand;height;width;no:-seaters.
+
+Table(emp)--->row name(car)---->colour
+types of att's:-
+(1)composite att:-name:-first name;middle name;last name
+(2)simple att:-height
+(3)single valued:-age
+(4)multivalued :-lang's known
+
+normalization:-The process of organaizing the data in database.Relationships b/n tables according to 
+rules designed to protect the data,and to make the database more fexible.
+
+(1)First Normal Form:-In individual table it removes the duplicates;
+					
+(2)Second Normal Form :-Create separate tables for sets of values that apply to multiple records
+						relates this tables with a foregin key.
+(3)Third Normal Form:-eliminates fields that do not dependent on the key.
+.....etc....
+NoSQL:-
+use:-it will use at web app's where to handle huge amounts of data and even for data traffics.
+
+CAP THREOM:-WE CAN ONLY ACHIEVE MAX TWO OUT OF THREE GUARANTEES FOR A DATABASE.
+
+(1)CONSISTENCY 
+(2)AVALAIBILITY
+(3)PARTITION TOLERANCE
+
+JDBC :- 
+
+		create tabels:-by writing some queires.
+		
+		conn db
+		
+		boilerplate code.
+		
+		
+		
+JPA:-JAVA PERSISTANCE API----->it's an extension of JDBC.It internally uses JDBC.
+		(1)It's a framework.
+		=>since it's a framework it will remove the duplicates.
+		"Bolierplate code"=repeated code.
+advantanges of JPA:-
+
+		(1)No tables creation
+		(2)No queires (zero queires)
+		(3)No exception Handling
+		(4)No Bolierpalte code
+
+	JPA--BY------->SUN MICROSYSTEMS.
+
+
+	JPA------------->SPECIFICATION.(INTERFACE)
+	
+	ORM Tools------------>Implementations.(ORM= Object Realtion Mapping)
+				ex:-*Hibernate;toplink;eclipselink;ibatis........................
+hibernate:-
+
+class------>Table
+fields----->columns
+objects---->Row.
+
+Entity Association:-Relationship between entities.
+==================
+types of ass'ns:-
+(1)Unidirectional :-one-one;one-many;many-one.
+(2)Bi directional  :-one-one;one-many;many-one,many-many....
+					with join table
+					w/o join table.
+
+
+*based on "Foreign Key " the assosication will happens b/n entities.
+
+*we can create relation b/n entities(classes) if they have common attributes(fields).
+
+one-one:-2 options :-(1)cascade	:-all the jpa operations can be shared b/n both the entities.	
+					(2)Fetch:-EAGER:-it fetches entities very particulary.
+							  LAZY:-It fetchs entities 
+
+
+													SPRING FRAMEWORK
+													================
+********	Spring is a non- invasive framework which is used to create light weighted and loosely coupled applications.    *****
+
+	ex:-web app's;Dynamic;Standalone.......	
+
+
+--->frameworks are majorly divided into 2 types:-(1)Invasive (2)Non- Invasive.
+
+(1)Invasive:-Even though it's a frame work,it will force the programmer to implement the predefined API.
+
+(2)Non - Invasive ex:-Hibernate,Spring......
+
+
+
+Ex:-Servlets
+--->3 ways to develop web app's:-     Servlets;GenerivServlet;HttpServlet........-------->Interface
+
+ex:-			LOGIN PAGE:---
+
+		JAVA APP'N(10)---------implement---------->Servlet(11)======>(11*10)====>110 met's.
+			1000-----------------------------11---------------------->11000.
+			
+			app'n is getting very large====heavy weight component.
+
+
+light weighted:-we are not writing any extends and implements here .....so that our app'n size wil be small.this makes spring 
+				as light weighted component.
+
+
+loosely and tightly coupled:-
+
+tightly coupled:-If the dependency b/n classes are very high .Then it is called as tightly coupled.
+
+class A{
+main()
+public void m1()
+{
+
+}
+
+class B extends A
+{
+
+main()
+A obj = new A();
+
+//public void m2(){
+//obj.m1();
+
+//}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
