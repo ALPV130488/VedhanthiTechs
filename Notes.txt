@@ -1,2 +1,6 @@
 santhosh:- happy morning!!!
+<<<<<<< Updated upstream
 bharathi:-life is beautiful....
+=======
+surya:-have the sweet day...
+>>>>>>> Stashed changes
