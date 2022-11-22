@@ -1,10 +1,14 @@
 santhosh:- happy morning!!!
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bharathi:-life is beautiful....
 =======
 surya:-have the sweet day...
 >>>>>>> Stashed changes
 =======
 saranya:-stay king...
+>>>>>>> Stashed changes
+=======
+komal:-spread love...
 >>>>>>> Stashed changes
