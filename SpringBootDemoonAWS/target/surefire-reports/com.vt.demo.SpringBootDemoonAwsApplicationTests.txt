@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.vt.demo.SpringBootDemoonAwsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.055 s - in com.vt.demo.SpringBootDemoonAwsApplicationTests
